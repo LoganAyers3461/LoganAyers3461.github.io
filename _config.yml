@@ -1,3 +1,10 @@
 collections:
   robots:
     output: true
+
+plugins:
+  - jekyll-get-json
+
+jekyll_get_json:
+  - data: tba
+    json: 'https://www.thebluealliance.com/api/v3/'

@@ -1,7 +1,12 @@
 ---
 layout: default
+data: 
 ---
-<h1>{{ page.title }} - {{page.robot}}</h1>
-<p>{{ page.game }}</p>
+<script src="/assets/js/team.js"></script>
 
-{{ content }}
+<div class="container-fluid">
+    <h1>{{ page.title }} - {{page.robot}}</h1>
+    <p>{{ page.game }}</p>
+
+    {{ content }}
+</div>
