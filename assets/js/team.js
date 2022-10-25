@@ -5,7 +5,7 @@ axios.get('https://www.thebluealliance.com/api/v3/team/frc3461?X-TBA-Auth-Key=hO
   .then(function (response) {
     // handle success
     console.log(response);
-    document.getElementById('demo').innerHTML = response;
+    document.getElementById('demo').innerHTML = response.data.team_number;
   })
   .catch(function (error) {
     // handle error
