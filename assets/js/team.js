@@ -1,7 +1,7 @@
-import { get } from 'axios';
+const axios = require('axios');
 
 // Make a request for a user with a given ID
-get('https://www.thebluealliance.com/api/v3/team/frc3461?X-TBA-Auth-Key=hOngAA1OYRpYtrfePLodT2G27R7fSBfrGJ57RwH1sOZJxaJv3rHGfhH37aLitVNb')
+axios.get('https://www.thebluealliance.com/api/v3/team/frc3461?X-TBA-Auth-Key=hOngAA1OYRpYtrfePLodT2G27R7fSBfrGJ57RwH1sOZJxaJv3rHGfhH37aLitVNb')
   .then(function (response) {
     // handle success
     console.log(response);
@@ -13,4 +13,5 @@ get('https://www.thebluealliance.com/api/v3/team/frc3461?X-TBA-Auth-Key=hOngAA1O
   })
   .then(function () {
     // always executed
+    document.getElementById('demo2').innerHTML = "Always Executed Function ran";
   });
