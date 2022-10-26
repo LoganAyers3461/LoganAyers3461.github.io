@@ -151,7 +151,7 @@ title: Team History
         <img src="{{item.image}}" class="rounded img-fluid">
         <br>
         {% for robot in site.robots %}
-          {% if robot.title && robot.title == item.header %}
+          {% if robot.title && robot.title == {item.header} %}
             <a href="{{robot.url}}" class="btn btn-primary">See Profile</a>
           {% endif %}
         {% endfor %}
